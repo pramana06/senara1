@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page Hampers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #ffffff;
+            z-index: 10;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #b56576;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: url('hmapers.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+        }
+
+        .hero-text {
+            position: relative;
+            max-width: 700px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.505);
+            border-radius: 10px;
+            color: #333;
+        }
+
+        .hero-text h1 {
+            margin-top: 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #b56576;
+            color: #cecbcbfe;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 40px 10%;
+            background-color: #ffffffa2;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 200px;
+            margin: 20px;
+        }
+
+        .feature img {
+            width: 75px;
+            height: 75px;
+            margin-bottom: 14px;
+        }
+
+        .feature h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .feature p {
+            font-size: 14px;
+        }
+        .video-section {
+    padding: 20px 0; 
+    background-color: transparent; 
+    display: flex;
+    justify-content: center;
+}
+
+.video-wrapper {
+    width: 90vw;
+    max-width: 900px;
+    padding: 0; 
+    box-shadow: none; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+
+        @media (max-width: 768px) {
+            .hero {
+                height: auto;
+                padding: 80px 20px;
+            }
+
+            .hero-text {
+                padding: 20px;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+
+<header>
+    <div class="logo">Senara.id</div>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hampers Eksklusif untuk Setiap Momen</h1>
+        <p>Temukan hampers eksklusif terbaik untuk momen spesial Anda. Berikan hadiah istimewa dengan koleksi hampers kami.</p>
+        <a href="#" class="btn">Pilih Koleksi</a>
+    </div>
+</section>
+<section style="padding: 40px 10%; background-color: #f9f9f9; display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center;">
+    <div style="max-width: 300px; margin: 20px;">
+        <img src="hmper1.jpeg" alt="Hampers 1" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h3 style="margin-top: 15px; font-size: 18px;">Hampers Premium Tradisional</h3>
+        <p style="font-size: 14px;">Kombinasi elegan antara wadah besek dan kemasan eksklusif cocok untuk hadiah formal.</p>
+    </div>
+    <div style="max-width: 300px; margin: 20px;">
+        <img src="hmper2.jpeg" alt="Hampers 2" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h3 style="margin-top: 15px; font-size: 18px;">Hampers Ceria Keluarga</h3>
+        <p style="font-size: 14px;">Isi lengkap dengan makanan ringan,minuman dan dekorasi lucu yang cocok untuk keluarga dan anak-anak.</p>
+    </div>
+</section>
+<section class="video-section">
+    <div class="video-wrapper">
+        <video controls>
+            <source src="WhatsApp Video 2025-05-07 at 15.08.38.mp4" type="video/mp4">
+            Browser Anda tidak mendukung pemutaran video.
+        </video>
+    </div>
+</section>
+
+
+<section class="features">
+    <div class="feature">
+        <img src="WhatsApp_Image_2025-05-02_at_12.13.45-removebg-preview.png" alt="Icon 1">
+        <h3>Spesialis Hampers</h3>
+        <p>Rekomendasi personal untuk momen spesial Anda.</p>
+    </div>
+    <div class="feature">
+        <img src="jam-removebg-preview.png" alt="Icon 2">
+        <h3>Garansi Tepat Waktu</h3>
+        <p>Pesanan Anda tiba tepat waktu seperti dijanjikan.</p>
+    </div>
+    <div class="feature">
+        <img src="bumi2.png" alt="Icon 3">
+        <h3>Cakupan Luas</h3>
+        <p>Pengiriman ke lebih dari 100 kota di seluruh Indonesia.</p>
+    </div>
+    <div class="feature">
+        <img src="WhatsApp_Image_2025-05-02_at_12.21.27-removebg-preview.png" alt="Icon 4">
+        <h3>Gratis Kirim</h3>
+        <p>Pengiriman gratis untuk pesanan dalam kota.</p>
+    </div>
+</section>
+
+
+</body>
+</html>
+        
